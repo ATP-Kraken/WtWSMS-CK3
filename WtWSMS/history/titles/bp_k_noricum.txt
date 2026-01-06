@@ -286,8 +286,11 @@ c_pitten = {
 		liege="e_wre"
 	}
 	#Post-Nedao
-	454.1.1 = { liege = 0 }
-	454.1.1 = { holder = Hunimund2 } #PLRE Vol2 Hunimund
+	454.1.1 = {
+		liege = 0
+		holder = Hunimund2 #PLRE Vol2 Hunimund
+		government = tribal_government
+	}
 	#Post-Bolia
 	469.1.1 = { holder = holder_c_pitten000 }
 }
@@ -792,7 +795,10 @@ c_sankt_polten = {
 	488.1.1 = { holder = 55 }
 }
 c_rosenheim = {
-	469.1.1 = { liege = d_suavi }
-	469.1.1 = { holder = UpperDanubeScirii000 }
+	469.1.1 = {
+		liege = d_suavi
+		holder = UpperDanubeScirii000
+		government = tribal_government
+	}
 	483.1.1 = { holder = UpperDanubeScirii001 }
 }

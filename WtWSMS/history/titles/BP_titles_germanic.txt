@@ -447,7 +447,10 @@ d_brisigavi = {
 	533.1.1 = { holder = holder_d_brisgavi011 }
 }
 d_raetovari = {
-	341.1.1 = { holder = holder_d_raetovari000 }
+	341.1.1 = {
+		holder = holder_d_raetovari000
+		government = tribal_government
+	}
 	386.1.1 = { holder = holder_d_raetovari001 }
 	399.1.1 = { holder = holder_d_raetovari002 }
 	410.1.1 = { holder = holder_d_raetovari003 }
