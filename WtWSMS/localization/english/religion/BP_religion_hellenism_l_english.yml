@@ -2,7 +2,7 @@
  
  # Platonism
  platonism: "Platonism"
- platonism_adj: "Platonism"
+ platonism_adj: "Platonist"
  platonism_adherent: "Platonist"
  platonism_adherent_plural: "Platonist"
  platonism_desc: "A philosophical system mixing Platonic ideas and oriental mysticism. It holds that all existence consists of emanations from the One with whom the soul may be reunited."
@@ -88,6 +88,12 @@
  #Hellenism
  hellenic_pagan_religious_head_title: "Pontifex Maximus"
  hellenic_pagan_religious_head_title_name: "Pontificate"
+ hellenism_good_god_demeter: "Demeter"
+ hellenism_good_god_hephaestus: "Hephaestos"
+ hellenism_good_god_herakles: "Herakles"
+ hellenism_good_god_dionysos: "Dionysos"
+ hellenism_good_god_hestia: "Hestia"
+ hellenism_good_god_mousai: "Mousai"
  #Platonism/all philosophical religions
  platonism_religious_head_title: "Philosopher"
  platonism_religious_head_title_name: "Academy"

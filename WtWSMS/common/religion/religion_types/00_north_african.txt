@@ -231,6 +231,9 @@
 				HighGodHerHis = CHARACTER_HERHIS_HIS
 				
 				GoodGodNames = { gurzil_high_god_name berber_religion_high_god_name }
+				ReligiousSymbol = kushitism_religious_symbol
+				ReligiousSymbol2 = kushitism_religious_symbol_2
+				ReligiousSymbol3 = kushitism_religious_symbol_3
 			}
 
 			#WtWSMS: Swarty, Rome, Trapani, Carthage, Aneb

@@ -522,8 +522,15 @@
 			accessory = {
 				mode = add
 				gene = headgear
-				template = ccp9_uyghur_high_nobility_headgear
-				range = { 0 1 } # For the randomness to work correctly
+				template = ccp9_high_nobility_headgear
+				accessory = m_headgear_ccp9_uyg_hi_01
+			}
+			accessory = {
+				mode = add
+				gene = headgear
+				template = ccp9_high_nobility_headgear
+				accessory = f_headgear_ccp9_uyg_nob_01
+				type = female
 			}
 		}
 		weight = {
@@ -669,7 +676,14 @@ bp_cultural_cloaks = {
 			}
 		}
 		outfit_tags = { senate_outfit }
-		weight = 0
+		weight = {
+			base = 0
+			modifier = {
+				add = 999
+				portrait_religious_high_trigger = yes
+				portrait_religious_hellenism_trigger = yes
+			}
+		}
 	}
 	chernyakhov_cloak_fp1 = {
 		dna_modifiers = {

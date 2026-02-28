@@ -418,6 +418,7 @@ corduenian = { # Migrational Era Corduenian
 		#Regional Traditions
 		#Ritual Traditions
 		#Realm Traditions
+		tradition_castle_keepers
 		#Combat Traditions
 		tradition_adaptive_skirmishing
 		tradition_highland_warriors
