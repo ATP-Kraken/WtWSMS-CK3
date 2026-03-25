@@ -594,17 +594,6 @@ heritage_senegambian = {
 		heritage_family_african = yes
 	}
 }
-heritage_siberian = {
-	type = heritage
-	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_siberian } }
-	audio_parameter = sea
-	
-	parameters = {
-		heritage_kulturbund_siberian = yes
-		heritage_group_north_asian = yes
-		heritage_family_eurasian = yes
-	}
-}
 heritage_somalian = {
 	type = heritage
 	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_somalian } }
@@ -922,7 +911,7 @@ heritage_tungusic = {
 		heritage_family_eurasian = yes
 	}
 }
-heritage_nivkh = {
+heritage_nivkh = { # Localized as Siberian
 	type = heritage
 	is_shown = {
 		heritage_is_shown_trigger = {
@@ -934,7 +923,6 @@ heritage_nivkh = {
 	parameters = {
 		heritage_kulturbund_siberian = yes
 		heritage_group_north_asian = yes
-		heritage_group_manchurian = yes
 		heritage_family_eurasian = yes
 	}
 }

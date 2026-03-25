@@ -1,6 +1,6 @@
 ﻿#ASIA
 
-##### Changed from Vanilla: Added Anatolian, Byzantine, Caucasian, Coptic, Levantine, Sakan
+##### Changed from Vanilla: Added Anatolian, Byzantine, Caucasian, Coptic, Levantine, Sakan, Elamite, Peristani
 culture_has_west_asian_heritage_pillar_trigger = {
 	culture = {
 		OR = {
@@ -15,6 +15,8 @@ culture_has_west_asian_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_syriac
 			has_cultural_pillar = heritage_byzantine
 			has_cultural_pillar = heritage_sakan
+			has_cultural_pillar = heritage_elamite
+			has_cultural_pillar = heritage_peristani
 		}
 	}
 }
@@ -32,7 +34,7 @@ culture_has_south_asian_heritage_pillar_trigger = {
 		}
 	}
 }
-##### Changed from Vanilla: Added Siberian, Sakan
+##### Changed from Vanilla: Added Sakan, Mogyer
 culture_has_north_asian_heritage_pillar_trigger = {
 	culture = {
 		OR = {
@@ -43,12 +45,12 @@ culture_has_north_asian_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_ainuic
 			has_cultural_pillar = heritage_tungusic
 			
-			has_cultural_pillar = heritage_siberian
 			has_cultural_pillar = heritage_sakan
+			has_cultural_pillar = heritage_mogyer
 		}
 	}
 }
-##### Changed from Vanilla: Added Sakan
+##### Changed from Vanilla: Added Sakan, Mogyer
 culture_has_central_asian_heritage_pillar_trigger = {
 	culture = {
 		OR = {
@@ -58,10 +60,11 @@ culture_has_central_asian_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_tocharian
 			
 			has_cultural_pillar = heritage_sakan
+			has_cultural_pillar = heritage_mogyer
 		}
 	}
 }
-##### Changed from Vanilla: Added Sakan
+##### Changed from Vanilla: Added Sakan, Serindian
 culture_has_east_central_asian_heritage_pillar_trigger = {
 	culture = {
 		OR = {
@@ -69,7 +72,7 @@ culture_has_east_central_asian_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_mongolic
 			
 			has_cultural_pillar = heritage_sakan
-			has_cultural_pillar = heritage_siberian
+			has_cultural_pillar = heritage_tocharian
 		}
 	}
 }
@@ -91,27 +94,17 @@ culture_has_east_african_heritage_pillar_trigger = {
 
 #MENA
 
-##### Changed from Vanilla: Replaced heritage_egyptian with heritage_kemetic
-culture_has_north_african_heritage_pillar_trigger = {
-	culture = {
-		OR = {
-			has_cultural_pillar = heritage_berber
-			has_cultural_pillar = heritage_kemetic
-		}
-	}
-}
-
-##### Changed from Vanilla: Added Levantine, Coptic, Israelite
+##### Changed from Vanilla: Added Punic, Israelite, Elamite
 culture_has_mena_heritage_pillar_trigger = {
 	OR = {
 		culture = { has_cultural_pillar = heritage_arabic }
 		culture = { has_cultural_pillar = heritage_syriac }
 		culture = { has_cultural_pillar = heritage_iranian }
 		culture_has_north_african_heritage_pillar_trigger = yes
-		
-		culture = { has_cultural_pillar = heritage_kemetic }
+
 		culture = { has_cultural_pillar = heritage_punic }
 		culture = { has_cultural_pillar = heritage_israelite }
+		culture = { has_cultural_pillar = heritage_elamite }
 	}
 }
 
@@ -181,7 +174,6 @@ culture_has_central_european_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_west_slavic
 			has_cultural_pillar = heritage_central_germanic
 			has_cultural_pillar = heritage_frankish
-			has_cultural_pillar = heritage_israelite
 			has_cultural_pillar = heritage_israelite
 			
 			has_cultural_pillar = heritage_common_slavic
