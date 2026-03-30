@@ -96,6 +96,7 @@
  tsakonian_history_loc: "Diverged from [CULTURE.GetName] in the Ist Century BC"
  tuyuhun_history_loc: "Diverged from [CULTURE.GetName] in the IIIrd Century AD"
  tzarfati_history_loc: "Formed from the [CULTURE.GetName] diaspora under [TARGET_CULTURE.GetName] rule in the Vth Century AD"
+ tzani_history_loc: "Diverged from [CULTURE.GetName] before the VIth Century BC"
  vandalic_history_loc: "Diverged from [CULTURE.GetName] in the [Concept('vandalic_culture_history','IInd Century AD')|E]"
  vidivarii_history_loc: "Formed from [CULTURE.GetName] and [TARGET_CULTURE.GetName] in the [Concept('vidivarii_culture_history','Late IVth Century AD')|E]"
  visigothic_history_loc: "Diverged from [CULTURE.GetName] in [Concept('visigothic_culture_history','AD 418')|E]"
