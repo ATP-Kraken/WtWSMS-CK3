@@ -102,7 +102,7 @@ culture_has_mena_heritage_pillar_trigger = {
 		culture = { has_cultural_pillar = heritage_iranian }
 		culture_has_north_african_heritage_pillar_trigger = yes
 
-		culture = { has_cultural_pillar = heritage_punic }
+		culture = { has_cultural_pillar = heritage_phoenician }
 		culture = { has_cultural_pillar = heritage_israelite }
 		culture = { has_cultural_pillar = heritage_elamite }
 	}

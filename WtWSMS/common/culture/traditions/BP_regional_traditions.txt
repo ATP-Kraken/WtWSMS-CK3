@@ -2187,8 +2187,8 @@ tradition_punic_traditions = { #Covers Punic Republican government, Polis cultur
 			NOT = { culture_tradition:tradition_legalistic = { is_in_list = traits } }
 		}
 		custom_description = {
-			text = hybrid_must_have_levantine_heritage_for_tradition_aramean_traditions
-			culture_pillar:heritage_syriac = { is_in_list = traits }
+			text = hybrid_must_have_phoenician_heritage_for_tradition_punic_traditions
+			culture_pillar:heritage_phoenician = { is_in_list = traits }
 		}
 	}
 	

@@ -6471,7 +6471,7 @@ e_italy = {
 					name_list_egyptian = cn_balharm
 					name_list_andalusian = cn_balharm
 					#NW Semitic
-					name_list_punic = cn_ziz
+					name_list_carthaginian = cn_ziz
 				}
 				
 				b_palermo = {
@@ -6517,7 +6517,7 @@ e_italy = {
 						name_list_egyptian = cn_balharm
 						name_list_andalusian = cn_balharm
 						#NW Semitic
-						name_list_punic = cn_ziz
+						name_list_carthaginian = cn_ziz
 					}
 					color = { 155 254 86 }
 				}
@@ -6556,7 +6556,7 @@ e_italy = {
 						name_list_thuringian = cn_drepanum
 						name_list_ostrogothic = cn_drepanum
 						#NW Semitic
-						name_list_punic = cn_motye
+						name_list_carthaginian = cn_motye
 					}
 					color = { 155 254 86 }
 				}
@@ -6621,7 +6621,7 @@ e_italy = {
 						name_list_ostrogothic = cn_mazaria
 						name_list_vandalic = cn_mazaria
 						#NW Semitic
-						name_list_punic = cn_mazar
+						name_list_carthaginian = cn_mazar
 						#Berber Group
 						name_list_northern_berber = cn_mazar
 						name_list_eastern_berber = cn_mazar
@@ -6827,7 +6827,7 @@ e_italy = {
 					name_list_helleno_thracian = cn_syrakousai
 					name_list_helleno_libyan = cn_syrakousai
 					#NW Semitic Cultures
-					name_list_punic = cn_beerot
+					name_list_carthaginian = cn_beerot
 					#Germanic
 					name_list_skirian = cn_syracusae
 					name_list_thuringian = cn_syracusae
@@ -6866,7 +6866,7 @@ e_italy = {
 						name_list_helleno_thracian = cn_syrakousai
 						name_list_helleno_libyan = cn_syrakousai
 						#NW Semitic
-						name_list_punic = cn_beerot
+						name_list_carthaginian = cn_beerot
 						#Germanic Cultures
 						name_list_skirian = cn_syracusae
 						name_list_thuringian = cn_syracusae
@@ -7144,7 +7144,7 @@ e_italy = {
 					name_list_helleno_thracian = cn_melite
 					name_list_helleno_libyan = cn_melite
 					#NW Semitic
-					name_list_punic = cn_maleth
+					name_list_carthaginian = cn_maleth
 				}
 				
 				b_malta = {
@@ -7178,7 +7178,7 @@ e_italy = {
 						name_list_helleno_thracian = cn_melite
 						name_list_helleno_libyan = cn_melite
 						#NW Semitic
-						name_list_punic = cn_maleth
+						name_list_carthaginian = cn_maleth
 					}
 					color = { 120 255 60 }
 				}
@@ -7220,7 +7220,7 @@ e_italy = {
 					name_list_helleno_thracian = cn_karalis
 					name_list_helleno_libyan = cn_karalis
 					#NW Semitic
-					name_list_punic = cn_karali
+					name_list_carthaginian = cn_karali
 					#Later Latin Cultures
 					name_list_sardinian = cn_casteddu
 					#Germanic Cultures
@@ -7261,7 +7261,7 @@ e_italy = {
 						name_list_helleno_thracian = cn_karalis
 						name_list_helleno_libyan = cn_karalis
 						#NW Semitic Cultures
-						name_list_punic = cn_karali
+						name_list_carthaginian = cn_karali
 						#Later Latin Cultures
 						name_list_sardinian = cn_casteddu
 						#Germanic Cultures
@@ -7350,7 +7350,7 @@ e_italy = {
 						name_list_ostrogothic = cn_somasum
 						name_list_vandalic = cn_somasum
 						#NW Semitic Cultures
-						name_list_punic = cn_shamash
+						name_list_carthaginian = cn_shamash
 					}
 					color = { 220 160 250 }
 				}
@@ -7546,7 +7546,7 @@ e_italy = {
 					province = 2656
 					cultural_names = {
 						#NW Semitic Cultures
-						name_list_punic = cn_sulki
+						name_list_carthaginian = cn_sulki
 					}
 					color = { 180 170 180 }
 				}

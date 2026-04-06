@@ -135,8 +135,8 @@ port_of_carthage = {
 	
 	can_construct = {
 		OR = {
-			scope:holder.culture = culture:punic
-			scope:holder.culture = { any_parent_culture_or_above = { this = culture:punic } }
+			scope:holder.culture = culture:carthaginian
+			scope:holder.culture = { any_parent_culture_or_above = { this = culture:carthaginian } }
 		}
 		special_commerical_building_trigger = yes
 	}
