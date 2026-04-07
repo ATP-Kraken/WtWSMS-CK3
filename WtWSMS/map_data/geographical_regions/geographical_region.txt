@@ -991,6 +991,7 @@ custom_arakan_mountains = {
 	}
 }
 world_steppe = {
+	generate_modifiers = yes
 	regions = {
 		world_steppe_west world_steppe_central world_steppe_east world_steppe_tarim
 	}
@@ -2177,6 +2178,53 @@ custom_beth_nahrain = {
 		d_diyarrabia d_diyarmudar d_diyarbakr d_euphrates
 		#Mesopotamia
 		d_kermanshah d_basra d_baghdad d_samarra d_kurdistan d_wasit d_kufa
+	}
+}
+
+custom_carthaginian_empire = {
+	generate_modifiers = yes
+	regions = {
+		custom_carthage
+		custom_tripolitania
+		custom_mauretania
+		custom_carthago_nova
+	}
+}
+
+custom_carthage = {
+	duchies = {
+		#Tunis
+		d_tunis d_gabes d_kairouan d_kroumerie d_jerid
+		#Scicili & Sardinia
+		d_sicily d_sardinia
+	}
+}
+
+custom_tripolitania = {
+	duchies = {
+		d_tripolitania d_syrte
+	}
+}
+
+custom_mauretania = {
+	duchies = {
+		d_bejaia d_zab d_alger d_tlemcen d_rif
+	}
+}
+
+custom_carthago_nova = {
+	duchies = {
+		d_sevilla d_granada d_murcia d_valencia
+	}	
+}
+
+custom_cumbria = {
+	generate_modifiers = yes
+	duchies = {
+		d_galloway
+	}
+	counties = {
+		c_westmorland c_cumberland c_lanarkshire
 	}
 }
 
