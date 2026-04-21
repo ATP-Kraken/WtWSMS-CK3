@@ -208,7 +208,7 @@ mausoleum_harlicarnassus = {
 				religion = religion:hellenism_religion
 				culture = { has_cultural_pillar = heritage_byzantine }
 				culture = { has_cultural_pillar = heritage_iranian }
-				culture = { has_cultural_pillar = heritage_anatolian }
+				culture = { has_cultural_pillar = heritage_ancient_greek }
 			}
 		}
 	}

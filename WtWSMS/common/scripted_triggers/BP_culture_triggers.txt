@@ -485,7 +485,7 @@ starts_with_writing_trigger = {
 	OR = {
 		#Pillars
 		this = { has_cultural_pillar = heritage_albanian }
-		this = { has_cultural_pillar = heritage_anatolian }
+		this = { has_cultural_pillar = heritage_ancient_greek }
 		this = { has_cultural_pillar = heritage_burman }
 		this = { has_cultural_pillar = heritage_byzantine }
 		this = { has_cultural_pillar = heritage_caucasian }

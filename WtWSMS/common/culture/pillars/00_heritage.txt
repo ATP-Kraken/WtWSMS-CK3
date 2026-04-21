@@ -13,11 +13,11 @@ heritage_akan = {
 		heritage_family_african = yes
 	}
 }
-heritage_anatolian = {
+heritage_ancient_greek = { #Anatolian
 	type = heritage
-	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_anatolian } }
+	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_ancient_greek } }
 	audio_parameter = byzantine
-	
+
 	parameters = {
 		heritage_group_balko_anatolian = yes
 		heritage_group_west_asian = yes
@@ -183,18 +183,6 @@ heritage_continental_celtic = {
 		heritage_family_european = yes
 	}
 }
-heritage_kemetic = {
-	type = heritage
-	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_kemetic } }
-	audio_parameter = mena
-	
-	parameters = {
-		heritage_group_afro_asian = yes
-		heritage_group_west_asian = yes
-		heritage_family_african = yes
-		heritage_family_west_asian = yes
-	}
-}
 heritage_dravidian = {
 	type = heritage
 	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_dravidian } }
@@ -237,6 +225,18 @@ heritage_east_slavic = {
 		heritage_group_slavic = yes
 		heritage_family_eurasian = yes
 		heritage_family_european = yes
+	}
+}
+heritage_egyptian = {
+	type = heritage
+	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_egyptian } }
+	audio_parameter = mena
+	
+	parameters = {
+		heritage_group_afro_asian = yes
+		heritage_group_west_asian = yes
+		heritage_family_african = yes
+		heritage_family_west_asian = yes
 	}
 }
 heritage_frankish = { #Germano-Gallic Romance
@@ -306,10 +306,14 @@ heritage_iranian = {
 heritage_israelite = {
 	type = heritage
 	is_shown = {
-		heritage_is_shown_trigger = { HERITAGE = heritage_israelite }
-		AND = { # Let Beta Israelis be Beta Israeli
-			scope:character.culture = { has_cultural_pillar = heritage_east_african }
-			scope:character.religion = religion:judaism_religion
+		OR = {
+			heritage_is_shown_trigger = {
+				HERITAGE = heritage_israelite
+			}
+			AND = { # Let Beta Israelis be Beta Israeli
+				scope:character.culture = { has_cultural_pillar = heritage_east_african }
+				scope:character.religion = religion:judaism_religion
+			}
 		}
 	}
 	audio_parameter = byzantine
@@ -664,18 +668,6 @@ heritage_tocharian = { #Serindian
 		heritage_family_west_asian = yes
 	}
 }
-heritage_trojan = {
-	type = heritage
-	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_trojan } }
-	audio_parameter = european
-	
-	parameters = {
-		heritage_group_balko_anatolian = yes
-		heritage_group_west_asian = yes
-		heritage_family_european = yes
-		heritage_family_west_asian = yes
-	}
-}
 heritage_turkic = {
 	type = heritage
 	is_shown = { heritage_is_shown_trigger = { HERITAGE = heritage_turkic } }
@@ -806,17 +798,6 @@ heritage_hunnic = {
 		heritage_group_eurasian_steppe = yes
 		heritage_group_north_asian = yes
 		heritage_family_eurasian = yes
-	}
-}
-heritage_ancient_greek = {
-	type = heritage
-	is_shown = { always = no }
-	audio_parameter = european
-
-	parameters = { # copied from heritage_byzantine
-		heritage_group_balko_anatolian = yes
-		heritage_family_european = yes
-		heritage_family_west_asian = yes
 	}
 }
 

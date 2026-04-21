@@ -9,9 +9,9 @@ culture_has_west_asian_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_tocharian
 			has_cultural_pillar = heritage_hunnic
 			
-			has_cultural_pillar = heritage_anatolian
+			has_cultural_pillar = heritage_ancient_greek
 			has_cultural_pillar = heritage_caucasian
-			has_cultural_pillar = heritage_kemetic
+			has_cultural_pillar = heritage_egyptian
 			has_cultural_pillar = heritage_syriac
 			has_cultural_pillar = heritage_byzantine
 			has_cultural_pillar = heritage_sakan
@@ -87,7 +87,7 @@ culture_has_east_african_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_east_african
 			has_cultural_pillar = heritage_bantu
 			
-			has_cultural_pillar = heritage_kemetic
+			has_cultural_pillar = heritage_egyptian
 		}
 	}
 }
@@ -146,7 +146,7 @@ culture_has_east_european_heritage_pillar_trigger = {
 		}
 	}
 }
-##### Changed from Vanilla: Added Anatolian, Caucasian, Continental Celtic, Proto-Carpathian, Vasconic
+##### Changed from Vanilla: Added Caucasian, Continental Celtic, Proto-Carpathian, Vasconic
 culture_has_south_european_heritage_pillar_trigger = {
 	culture = {
 		OR = {
@@ -158,7 +158,6 @@ culture_has_south_european_heritage_pillar_trigger = {
 			has_cultural_pillar = heritage_vlach
 			has_cultural_pillar = heritage_ancient_greek
 			
-			has_cultural_pillar = heritage_anatolian
 			has_cultural_pillar = heritage_caucasian
 			has_cultural_pillar = heritage_continental_celtic
 			has_cultural_pillar = heritage_albanian

@@ -2,7 +2,7 @@
 	color = trojan
 
 	ethos = ethos_bellicose
-	heritage = heritage_trojan
+	heritage = heritage_ancient_greek
 	language = language_trojan
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
