@@ -103,7 +103,6 @@ doctrine_core_tenets = {
 		tenet_complex_exegesis
 		tenet_cenobitic_monasticism
 		tenet_wedding_ceremonies
-		tenet_dhammavicaya
 		tenet_unrelenting_warfare
 		tenet_ethnic_religion
 	}
@@ -130,6 +129,9 @@ doctrine_theism = {
 	doctrine_types = {
 		doctrine_monotheist
 		doctrine_polytheist
+		doctrine_roman_polytheist
+		doctrine_monist
+		doctrine_agnostic
 	}
 }
 

@@ -72,6 +72,15 @@ BP_demand_conversion_trigger = {
 			scope:actor.culture = scope:recipient.culture
 		}
 	}
-	#Landed Theocrats should always be protected
+	trigger_if = { #Roman Senators are protected from forced conversion
+		limit = { scope:actor = { government_has_flag = is_a_roman_government } }
+		custom_description = {
+			text = actor_cannont_demand_conversion_of_roman_senators
+			subject = scope:actor
+			object = scope:recipient
+			NOT = { scope:recipient = { has_trait_with_flag = roman_senator } }
+		}
+	}
+	#Landed Theocrats should always be protected; revoke their titles instead
 	NOT = { scope:recipient = { government_has_flag = government_is_theocracy } }
 }
