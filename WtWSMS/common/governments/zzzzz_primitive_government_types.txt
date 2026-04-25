@@ -5,6 +5,7 @@
 		legitimacy = yes
 		use_as_base_on_landed = yes #Avoiding a bunch of jank code with this
 		always_use_patronym = yes
+		allow_accolades = yes
 	}
 
 	royal_court = any
@@ -69,6 +70,7 @@ tribal_government = {
 		use_as_base_on_landed = yes #Avoiding a bunch of jank code with this
 		always_use_patronym = yes
 		affected_by_development = no
+		allow_accolades = yes
 	}
 
 	royal_court = any
@@ -236,7 +238,7 @@ herder_government = {
 	
 	character_modifier = {
 		knight_limit = -100
-		active_accolades = -100
+		accolades = -100
 		county_opinion_add = 100
 		monthly_income_mult = -10
 	}
