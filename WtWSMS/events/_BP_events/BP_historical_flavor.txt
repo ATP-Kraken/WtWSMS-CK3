@@ -8,7 +8,7 @@ bp_historical_flavor.0001 = { #WTWSMS id: zusk_event.50
 	title = bp_historical_flavor.0001.name
 	desc = bp_historical_flavor.0001.desc
 
-	theme = martial
+	theme = dungeon
 	content_source = dlc_WtWSMS
 
 	trigger = { scope:geneseric = character:93 }
