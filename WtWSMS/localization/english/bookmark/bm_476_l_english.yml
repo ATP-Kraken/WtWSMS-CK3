@@ -110,7 +110,7 @@
  
  ##### Caucus Bookmark #####
  bm_476_caucuses: "Battleground of Cultures"
- bm_476_caucuses_desc: "The Caucasus have long been the cross-roads between different cultures, and this period is no exception. While Persia retains nominal overlordship of Iberia, Armenia, and [Glossary(Aghwank,'AGHWANK_GLOSS')], the #italic Shahanshah's#! grip on the region is beginning to slip. The aftermath of the Battle of Avarayr in AD 451 has led to the legalization of Christianity in Persia (or, at least, those sects practised within the Empire) and Caucasian Christians chaff at having an infidel rulers.\n\nIn particular, the thoroughly Christian Armenians are beginning to find having Zoroastrian #italic Marzbans#! offensive.\n\n#bold Can Peroz maintain a hold on the Caucasian statelets, or will it prove to be too difficult to rule the people of the hills.#!"
+ bm_476_caucuses_desc: "The Caucasus have long been the cross-roads between different cultures, and this period is no exception. While Persia retains nominal overlordship of Iberia, Armenia, and [Glossary('Aghwank','AGHWANK_GLOSS')], the #italic Shahanshah's#! grip on the region is beginning to slip. The aftermath of the Battle of Avarayr in AD 451 has led to the legalization of Christianity in Persia (or, at least, those sects practised within the Empire) and Caucasian Christians chaff at having an infidel rulers.\n\nIn particular, the thoroughly Christian Armenians are beginning to find having Zoroastrian #italic Marzbans#! offensive.\n\n#bold Can Peroz maintain a hold on the Caucasian statelets, or will it prove to be too difficult to rule the people of the hills.#!"
  
  bm_476_caucuses_vachagan: "Vachagan III"
  bm_476_caucuses_vachagan_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
