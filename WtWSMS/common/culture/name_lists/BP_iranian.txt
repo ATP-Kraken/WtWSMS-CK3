@@ -370,7 +370,7 @@ name_list_mazanderani = {
 name_list_bactrian = {
 	cadet_dynasty_names = {
 		"dynn_Amihraman"
-		"dynn_Khwasraw "
+		"dynn_Khwasraw"
 		"dynn_Bagmareg"
 		"dynn_Mithravakhsha"
 		"dynn_Vakhshufrita"
@@ -381,7 +381,7 @@ name_list_bactrian = {
 	}
 	dynasty_names = {
 		"dynn_Amihraman"
-		"dynn_Khwasraw "
+		"dynn_Khwasraw"
 		"dynn_Bagmareg"
 		"dynn_Mithravakhsha"
 		"dynn_Vakhshufrita"

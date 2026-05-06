@@ -272,7 +272,7 @@ hellenic.501 = {
 scripted_trigger hellenic_502_bastard_child = {
 	age < 1
 	NOR = {
-		has_character_flag = VIET_hellenic_502_event_involved
+		has_character_flag = VIET_hellenic_502_involved
 		has_trait = twin # Easier this way
 	}
 	exists = mother
@@ -283,7 +283,7 @@ scripted_trigger hellenic_502_bastard_child = {
 		is_married = yes
 	}
 	mother = {
-		NOT = { has_character_flag = VIET_hellenic_502_event_involved }
+		NOT = { has_character_flag = VIET_hellenic_502_involved }
 		is_attracted_to_men = yes
 	}
 	OR = {

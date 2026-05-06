@@ -95,7 +95,7 @@
  bp_viet.262.title: "Scythian Gold"
  bp_viet.262.desc: "My excursion through the steppes is interrupted when I notice some gold on the ground.\n\nDigging more deeply, I find a burial mound full of gold art and jewelry. Perhaps this was left over by one of the ancient steppe peoples, like the Scythians?"
  bp_viet.262.a: "I see a gold comb... a gold dagger... a gold figurine..."
- bp_viet.263.title: "Buddhas of Bamiyan"
+ bp_viet.263.title: "Buddhas of Bamian"
  bp_viet.263.desc: "Traveling through the mountainous terrain of [ROOT.Char.GetCurrentLocation.GetName], I notice large, ancient statues carved into the mountainside some distance ahead.\n\n[entourage_helper.GetName] says "The locals call it #italic sork-bot#! and #italic keng-bot#! — the red idol and the white idol, as they were worshipped by the Buddhists.""
  bp_viet.263.a: "What an impressive sight."
  bp_viet.263.b: "The disgusting things [ROOT.Char.Custom('GetUnbelieverNamePlural')] do to beguile the masses!"

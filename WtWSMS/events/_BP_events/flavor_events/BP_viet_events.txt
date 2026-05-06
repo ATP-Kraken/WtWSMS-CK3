@@ -2184,7 +2184,7 @@ scripted_trigger bp_viet_263_identify_buddhas_trigger = {
 	OR = {
 		has_trait = theologian
 		knows_language_of_culture = root.location.county.culture
-		faith.religion = religion:buddhism_religion
+		eastern_or_syncretic_with_eastern_trigger = { CHARACTER = this }
 	}
 }
 
@@ -2201,6 +2201,7 @@ bp_viet.263 = { #WTWSMS id: VIETnam.263
 	trigger = {
 		is_location_valid_for_travel_event_on_land = yes
 		location = { geographical_region = world_kabulistan }
+		province:4343 = { has_building_or_higher = buddhas_of_bamian_01 }
 		current_travel_plan = { any_entourage_character = { bp_viet_263_identify_buddhas_trigger = yes } }
 	}
 
