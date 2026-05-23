@@ -857,3 +857,32 @@ taifal_dynasty_thifalia = { #Equites Honoriani Taifali iuniores ND 100#16
 		}
 	}
 }
+house_tuoba_wei={
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=white
+	color3=white
+	colored_emblem={
+		color1=white
+		texture="ce_seal_frame_divided.dds"
+		instance={
+			scale={ 0.7 0.7 }
+		}
+	}
+	colored_emblem={
+		color1=green
+		texture="ce_seal_name_yuan_539f.dds" #5143
+		instance={
+			position = { 0.35 0.5 }
+			scale = { 0.45 0.6 }
+		}
+	}
+	colored_emblem={
+		color1=white
+		texture="ce_seal_name_wei_97cb.dds"
+		instance={
+			position={ 0.65 0.5 }
+			scale = { 0.45 0.6 }
+		}
+	}
+}

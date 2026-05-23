@@ -5,6 +5,17 @@
 			"dynn_YujiulU_"
 			"dynn_Disuyuan"
 			"dynn_Dengzhu"
+			"dynn_Yuwen"
+			"dynn_Puliuru"
+			"dynn_Daye"
+			"dynn_Qimitou"
+			"dynn_Qifu"
+			"dynn_Tuoba"
+			"dynn_Tufa"
+			"dynn_Yuchi"
+			"dynn_Erzhu"
+			"dynn_Wanyu"
+			"dynn_Dugu_7368_5B64"
 		}
 		
 		dynasty_names = {
@@ -13,6 +24,17 @@
 			"dynn_YujiulU_"
 			"dynn_Disuyuan"
 			"dynn_Dengzhu"
+			"dynn_Yuwen"
+			"dynn_Puliuru"
+			"dynn_Daye"
+			"dynn_Qimitou"
+			"dynn_Qifu"
+			"dynn_Tuoba"
+			"dynn_Tufa"
+			"dynn_Yuchi"
+			"dynn_Erzhu"
+			"dynn_Wanyu"
+			"dynn_Dugu_7368_5B64"
 		}
 		
 		male_names = {
