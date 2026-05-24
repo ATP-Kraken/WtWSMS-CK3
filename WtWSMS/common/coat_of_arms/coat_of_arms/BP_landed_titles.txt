@@ -7,7 +7,7 @@ h_eastern_roman_empire = {
 	color2 = "yellow"
 
 	colored_emblem = {
-		texture = "ce_IRCK3_chi_rho.dds"
+		texture = "ce_chi_rho.dds"
 		color1 = "yellow"
 	}
 }
