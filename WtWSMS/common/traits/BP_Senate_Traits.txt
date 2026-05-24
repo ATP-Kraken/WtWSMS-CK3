@@ -48,6 +48,8 @@ senator_west = {
 	}
 	
 	ruler_designer_cost = 20
+	
+	flag = roman_senator
 }
 senator_east = {
 	shown_in_ruler_designer = yes
@@ -87,6 +89,8 @@ senator_east = {
 	}
 	
 	ruler_designer_cost = 20
+	
+	flag = roman_senator
 }
 #Former Consuls
 former_consul_west = {

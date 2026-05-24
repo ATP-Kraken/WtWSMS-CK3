@@ -7,7 +7,7 @@
  
  bm_476_wre_romulus_augustulus: "Romulus"
  bm_476_wre_romulus_augustulus_subheading: "#italic $hegemon_roman_government_male$#! of the Western Roman Empire"
- bm_476_wre_romulus_augustulus_desc: "Proclaimed as emperor by his father, Romulus Augustus was little more than a child thrust into Emperorship, unrecognized by the East. He, via the will of his father, usurped the Western Roman Empire, which had been crippled by centuries of strife and decline. With uprising of the barbarian general Odovacar threatening his already uneasy and short reign, what fate lies for the young emperor?\n\n#bold Can the child Emperor be the second coming of Romulus, or is his name a portent of the end of the #italic Pars Occidentalis#!?#!"
+ bm_476_wre_romulus_augustulus_desc: "Proclaimed as emperor by his father, Romulus Augustus was little more than a child thrust into Emperorship, unrecognized by the East. He, via the will of his father, usurped the Western Roman Empire, which had been crippled by centuries of strife and decline. With uprising of the barbarian general Odovacar threatening his already uneasy and short reign, what fate lies for the young emperor?\n\n#bold Can the child Emperor be the second coming of Romulus, or is his name a portent of the end of the [Glossary('#italic Pars Occidentalis#!','PART_WEST_GLOSS')]?#!"
  bm_476_wre_romulus_augustulus_alt_orestes: "Orestes"
  bm_476_wre_romulus_augustulus_alt_orestes_desc: ""
  BOOKMARK_RELATION_FATHER_REGENT: "(Father and Regent)"
@@ -94,6 +94,7 @@
  bm_476_adventurers_odoacer: "Odovacar"
  bm_476_adventurers_odoacer_subheading: "Leader of the Western Roman #italic Foederati#!"
  bm_476_adventurers_odoacer_desc: "Odovacar is a citizen and general of Rome, and is the commander of a Germanic #italic Foederati#!. When the #italic foederati#! were denied lands in Italy, Odovacar led them against Romulus [Glossary('#italic Augustulus#!','GLOSS_AUGUSTULUS')], displacing the boy emperor and founding the Kingdom of Italy. Thoroughly an integrated Roman citizen, his efforts were met with praise and reward from Zeno, the Emperor-in-the-East, as he was allowed to govern Italy as an independent Roman province. However, left without the support of the Eastern Roman Empire, Odovacar must meet the threats that for so long had destabilized the Western Roman Empire.\n\n#bold Can Odovacar secure a place for his people, like other Germanic conquerors, or will he fail where Alaric and Gaiseric succeeded?#!"
+ GLOSS_AUGUSTULUS: "Diminutive of 'Augustus'; can be read as 'little Augustus', in reference to Romulus' youth or his status as his father's puppet"
  
  bm_476_adventurers_emperor_zeno: "Zeno"
  bm_476_adventurers_emperor_zeno_subheading: "Claimant to the Eastern Roman throne"

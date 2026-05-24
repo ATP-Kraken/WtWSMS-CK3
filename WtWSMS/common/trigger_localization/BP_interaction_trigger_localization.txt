@@ -74,3 +74,8 @@ actor_cannont_demand_conversion_of_unrelated_federates = {
 	first_not = ACTOR_CANNONT_DEMAND_CONVERSION_OF_UNRELATED_FEDERATES
 	third_not = ACTOR_CANNONT_DEMAND_CONVERSION_OF_UNRELATED_FEDERATES
 }
+actor_cannont_demand_conversion_of_roman_senators = {
+	global_not = ACTOR_CANNONT_DEMAND_CONVERSION_OF_ROMAN_SENATORS
+	first_not = ACTOR_CANNONT_DEMAND_CONVERSION_OF_ROMAN_SENATORS
+	third_not = ACTOR_CANNONT_DEMAND_CONVERSION_OF_ROMAN_SENATORS
+}

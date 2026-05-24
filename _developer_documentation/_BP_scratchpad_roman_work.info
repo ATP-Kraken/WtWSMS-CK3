@@ -6,20 +6,6 @@ Bugs:
 - Hepthalites should have Male-Only succession?
 
 ==========
-0.1.9 Update
-----------
-- Error Logs
-
-- Interlink Punic & Carthaginian
-- Handle heritage_phoenician, language_carthaginian, restore_carthage_decision, Carthaginian flavorization, 
-- Dhamavica Tenet should be consolidated
-- Rereview Decisions vis-a-vis Admin (06_ep3_admin_decisions)
-
-- Readd Lollardy, Bogomolism, Catharism, &c. for compatability
-
-- DPh Kraken's Branch
-
-==========
 Hunter-Gatherer
 ----------
 * Add a trait that prevents marriage and inheritance (basically devoted), gets removed during transition
@@ -30,15 +16,15 @@ Hunter-Gatherer
 ==========
 Roman Government (MVP)
 ----------
+- Error Logs
+
 Potential Bugs:
 - Populist Revolts are becoming Feudal/Clan (Possibly Fixed?)
 - County grants are becoming Roman Admin from Sub-Roman (Reproducer not found yet?)
 - MO occasionally borking out at start, giving to someone new at game start?
 
 Features:
-- MO/MM Chars should have dynasty names
-- Senators should have certain protection against demanding conversion to state faith
-- Re-enable minister should be diarch code or not?
+- Readd Lollardy, Bogomolism, Catharism, &c. for compatibility
 - Fixup domicile construction tooltip
 
 ==========
@@ -50,10 +36,17 @@ CBs: Federate Raid Wars
 
 - Add necessary macros to extend and simplify Roman-government GUI hooks
 
+- Ability to remove Augustulus nickname if Augustulus makes it to adulthood and is no longer in a regency _and_ has a hegemony-tier title
+
+- Re-enable minister should be diarch code or not? Seems like we're handling it independently.
+
 - Character Interactions: Enable the ability to give ai-owned lands in your realm to federates as an admin.
 - Great Projects: Projects for Sub-Romans to fight against decay of laws.
 - Add the other two dynasty legacies
 - Make Cataphracts recruitable again
+
+History:
+- MO/MM Chars should have dynasty names
 
 Bookmarks: Revamp bookmarks
 - Add 479 bookmark

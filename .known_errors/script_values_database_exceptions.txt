@@ -358,6 +358,11 @@ spouse_default_task_martial_scale
 spouse_default_task_stewardship_scale
 spouse_default_task_learning_scale
 spouse_default_task_diplomacy_scale
+spouse_task_court_politics_scale
+spouse_task_chivalry_scale
+spouse_task_court_intrigue_scale
+spouse_task_manage_domain_scale
+spouse_task_patronage_scale
 hostile_scheme_base_odds_prediction_guts_value
 ##### BP Stuff #####
 #ccu_culture_values_CCU_overwrite

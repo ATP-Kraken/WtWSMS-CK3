@@ -294,6 +294,7 @@ GFX:
 - Updated GFX for a number of faiths
 
 Tweaks:
+- Cannot demand the conversion of Roman Senators if one has a Roman government, reflecting the Senate being a long-standing bastion of paganism in the Christian Empire
 - Internally remapped some heritages for Vanilla compatibility
 - Added some historical executions where appropriate
 - Removed the ability to adopt culture pillars from legends
