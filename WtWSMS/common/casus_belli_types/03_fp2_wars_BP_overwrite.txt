@@ -19,7 +19,7 @@ fp2_border_raid = {
 			limit = {
 				has_dlc_feature = the_fate_of_iberia
 				scope:attacker.culture = { has_innovation = innovation_tribal_warfare }
-				NOT = { scope:attacker.culture = { has_innovation = innovation_ius_ad_bellum } }
+				NOT = { scope:attacker.culture = { has_innovation = innovation_casus_belli } }
 			}
 			always = yes
 		}
@@ -44,7 +44,7 @@ fp2_border_raid = {
 		OR = {
 			AND = {
 				scope:attacker.culture = { has_innovation = innovation_tribal_warfare }
-				NOT = { scope:attacker.culture = { has_innovation = innovation_ius_ad_bellum } }
+				NOT = { scope:attacker.culture = { has_innovation = innovation_casus_belli } }
 			}
 			AND = {
 				can_use_struggle_cbs_trigger = yes
