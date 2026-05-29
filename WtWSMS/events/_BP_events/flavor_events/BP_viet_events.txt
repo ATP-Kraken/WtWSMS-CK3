@@ -694,7 +694,7 @@ bp_viet.4005 = { #WTWSMS id: VIETmisc.4005
 	content_source = dlc_WtWSMS
 	
 	trigger = {
-		the_culture_or_parent_or_above_is_trigger = { CULTURE = culture:bosporan }
+		culture = { the_culture_or_parent_or_above_is_trigger = { CULTURE = culture:bosporan } }
 	}
 	
 	weight_multiplier = {

@@ -153,7 +153,7 @@
  trait_senator_east_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] is a member of the Constantinopolitan Senate, a prestigious institution."
  trait_senator_west_family_desc: "$trait_senator_west_character_desc$ $trait_senator_family_desc$"
  trait_senator_east_family_desc: "$trait_senator_east_character_desc$ $trait_senator_family_desc$"
- trait_senator_family_desc: "As a member of the [ROOT.Char.GetDynasty.GetBaseName] family, [ROOT.Char.GetSheHe] benefits from privileged status within the Senate."
+ trait_senator_family_desc: "As a member of the [ROOT.Char.GetDynasty.GetBaseName] family, [ROOT.Char.GetSheHe] benefits from a privileged status within the Senate."
  trait_former_consul_west: "Former Consul"
  trait_former_consul_west_desc: "This character formerly served as consul of the Roman Senate, the leadership role of a prestigious institution."
  trait_former_consul_west_character_desc: "[ROOT.Char.GetFirstNameNoTooltip] formerly served as the Roman Senate, the leadership role of a prestigious institution."

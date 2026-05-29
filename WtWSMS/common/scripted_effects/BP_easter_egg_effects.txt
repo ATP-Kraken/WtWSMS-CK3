@@ -11,6 +11,7 @@
 	
 	#Convert counties and characters
 	every_county = {
+		limit = { exists = county }
 		paganify_county_effect = yes
 	}
 	every_ruler = {

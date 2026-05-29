@@ -65,7 +65,7 @@
 	remove_global_variable = $REGION$_consul_nominee
 	situation:BP_senate = {
 		situation_sub_region:$REGION$ = {
-			change_phase = { phase = senate_disbanded }
+			change_phase = senate_disbanded
 		}
 	}
 }
@@ -85,7 +85,7 @@ destroy_senate_effect = {
 	remove_global_variable = $REGION$_consul_nominee
 	situation:BP_senate = {
 		situation_sub_region:$REGION$ = {
-			change_phase = { phase = disbanded }
+			change_phase = senate_disbanded
 		}
 	}
 }
@@ -159,7 +159,7 @@ senate_election_effect = {
 	#If the city holder is stalling the Senate, remind him again...
 	if = {
 		#You haven't made a definite determination yet...
-		limit = { has_senate_phase_trigger = { ACTOR = title:$BARONY$.holder.top_liege PHASE = senate_deliberation } }
+		limit = { situation:BP_senate = { situation_sub_region:$REGION$ = { sub_region_current_phase = senate_deliberation } } }
 		
 		every_living_character = { limit = { has_character_modifier = roman_consul_$REGION$ } save_scope_as = the_consul_$REGION$ }
 		if = {

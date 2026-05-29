@@ -83,6 +83,8 @@
  #Situation
  situation_BP_senate: "The Roman Senates"
  situation_BP_senate_desc: "$BP_senate_participant_group_city_holder_desc$"
+ situation_type_BP_senate: "$situation_BP_senate$"
+ situation_type_BP_senate_desc: "$situation_BP_senate_desc$"
  
  BP_senate_participant_group_city_holder: "De Facto Liege"
  BP_senate_participant_group_city_holder_desc: "By Roman tradition, any ruler of the City must take heed of the Senate."

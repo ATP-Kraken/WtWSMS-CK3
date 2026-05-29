@@ -184,7 +184,7 @@
 
 			modifier_sets = {
 				senate_effects = {
-					icon = "gfx/interface/icons/modifiers/byzantine_crown_negative.dds"
+					icon = "gfx/interface/icons/modifiers/byzantine_crown_mixed.dds"
 
 					city_holder = {
 						character_modifier = {

@@ -23,8 +23,7 @@ senator_west = {
 			#Additional description for senate family
 			triggered_desc = {
 				trigger = { this.dynasty = { has_dynasty_modifier = roman_senate_family_west } }
-				desc = trait_senator_west_character_desc
-				desc = trait_senator_family_desc
+				desc = trait_senator_west_family_desc
 			}
 			desc = trait_senator_west_character_desc
 		}

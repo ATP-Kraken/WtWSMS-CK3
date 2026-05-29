@@ -1097,7 +1097,7 @@ BP_roman_senate_events.1054 = { #You've been nominated to become consul
 		name = BP_roman_senate_events.1054.a
 		nominated_consul_effect = {
 			ACTOR = scope:actor
-			REGION = west
+			REGION = east
 		}
 	}
 }

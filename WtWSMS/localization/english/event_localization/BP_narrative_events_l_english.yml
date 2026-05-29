@@ -6,7 +6,7 @@
  bp_narrative_events.0001.germanic_religion_response: "[ROOT.Char.GetFaith.HighGodName] gives us strength!"
  bp_narrative_events.0001.imperial_christian_response: "[ROOT.Char.GetFaith.HighGodName] help us!"
  bp_narrative_events.0001.odoacer_response: "The Romans deserved everything I have done to them!"
- bp_narrative_events.0001.genseric_response: "[barbarian_ruler.GetFirstNameNoTooltip] could have never done it without my help"
+ bp_narrative_events.0001.genseric_response: "[barbarian_ruler.GetFirstNameNoTooltip] could have never done it without my help!"
  bp_narrative_events.0001.nepos_response: "I must preserve the glory of Rome at all costs!"
  bp_narrative_events.0001.byzantine_response: "Rome lives on! They are fools to think otherwise."
  #Nepos becomes Western Emperor
