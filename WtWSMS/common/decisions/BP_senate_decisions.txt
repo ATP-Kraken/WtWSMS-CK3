@@ -455,6 +455,23 @@ request_west_senate_recognition = {
 	cost = {}
 	
 	effect = {
+		show_as_tooltip = {
+			random_list = {
+				100 = {
+					show_chance = no
+					desc = request_senate_recognition_tooltip.seek_approval
+					custom_tooltip = BP_roman_senate_events.0011.seek_approval.flavor
+					custom_tooltip = BP_roman_senate_events.0011.seek_approval.tooltip
+				}
+				100 = {
+					show_chance = no
+					desc = request_senate_recognition_tooltip.dismiss
+					custom_tooltip = BP_roman_senate_events.0011.dismiss_the_senate.flavor
+					add_character_modifier = ignored_the_senate
+				}
+			}
+		}
+			
 		root = {
 			set_variable = already_asked_the_senate
 			trigger_event = BP_roman_senate_events.0011
@@ -510,6 +527,23 @@ request_east_senate_recognition = {
 	cost = {}
 	
 	effect = {
+		show_as_tooltip = {
+			random_list = {
+				100 = {
+					show_chance = no
+					desc = request_senate_recognition_tooltip.seek_approval
+					custom_tooltip = BP_roman_senate_events.1011.seek_approval.flavor
+					custom_tooltip = BP_roman_senate_events.1011.seek_approval.tooltip
+				}
+				100 = {
+					show_chance = no
+					desc = request_senate_recognition_tooltip.dismiss
+					custom_tooltip = BP_roman_senate_events.1011.dismiss_the_senate.flavor
+					add_character_modifier = ignored_the_senate
+				}
+			}
+		}
+		
 		root = {
 			set_variable = already_asked_the_senate
 			trigger_event = BP_roman_senate_events.1011

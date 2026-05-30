@@ -26,6 +26,8 @@
  request_west_senate_recognition_desc: "The Senate of [GetTitleByKey('b_roma').GetNameNoTier] must acknowledge my authority as [ROOT.Char.GetTitleAsNameNoTooltip].\nI may accept their counsel, or remind them that I alone preside."
  request_west_senate_recognition_tooltip: "$REQUEST_WESTERN_SENATE_RECOGNITION_ENABLED$"
  request_west_senate_recognition_confirm: "Call the quorum"
+ request_senate_recognition_tooltip.seek_approval: "You request approval"
+ request_senate_recognition_tooltip.dismiss: "You dismiss the Senate"
  request_east_senate_recognition: "$request_west_senate_recognition$"
  request_east_senate_recognition_desc: "The Senate of [GetTitleByKey('b_constantinople').GetNameNoTier] must recognize my authority as [ROOT.Char.GetTitleAsNameNoTooltip].\nI may accept their counsel, or remind them that I alone preside."
  request_east_senate_recognition_tooltip: "$REQUEST_EASTERN_SENATE_RECOGNITION_ENABLED$"

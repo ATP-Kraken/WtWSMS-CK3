@@ -240,7 +240,7 @@ BP_new_top_liege_of_city = {
 					change_phase = senate_deliberation
 				}
 			}
-			trigger_event = { id = BP_roman_senate_events.0020 days = { 3 7 } }
+			trigger_event = { id = BP_roman_senate_events.0020 days = { 14 30 } }
 		}
 		else_if = {
 			limit = { root = title:b_constantinople.holder.top_liege }
@@ -253,7 +253,7 @@ BP_new_top_liege_of_city = {
 					change_phase = senate_deliberation
 				}
 			}
-			trigger_event = { id = BP_roman_senate_events.1020 days = { 3 7 } }
+			trigger_event = { id = BP_roman_senate_events.1020 days = { 14 30 } }
 		}
 	}
 }
