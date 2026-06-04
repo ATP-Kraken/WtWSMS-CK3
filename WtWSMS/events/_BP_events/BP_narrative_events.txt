@@ -1,7 +1,7 @@
 ﻿namespace = bp_narrative_events
 
-#bp_narrative_events.0001 - Fall of Rome to Barbarians
-#bp_narrative_events.0002 - Julius Nepos becomes WRE
+#0001 - Fall of Rome to Barbarians
+#0002 - Julius Nepos becomes WRE
 
 #Fall of Rome
 bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
@@ -15,6 +15,17 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 
 	immediate = {
 		title:c_roma.holder.top_liege = { save_scope_as = barbarian_ruler }
+		#Inform all other playable characters
+		if = {
+			limit = { root = scope:barbarian_ruler }
+			every_ruler = {
+				limit = {
+					NOT = { this = root }
+					primary_title.tier >= tier_county
+				}
+				trigger_event = { id = bp_narrative_events.0001 days = 1 }
+			}
+		}
 	}
 
 	right_portrait = {
@@ -26,12 +37,7 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 		fallback = yes
 		name = bp_narrative_events.0001.general_response
 		trigger = {
-			top_liege = {
-				NOR = {
-					has_title = title:e_byzantium
-					has_title = title:h_eastern_roman_empire
-				}
-			}
+			top_liege = { has_a_roman_empire_trigger = no }
 			NOR = { religion = religion:germanic_religion }
 			NOR = { religion = religion:hellenism_religion }
 			NOT = { this = scope:barbarian_ruler }
@@ -46,12 +52,7 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 	option = { #Germanic Pagans
 		name = bp_narrative_events.0001.germanic_religion_response
 		trigger = {
-			top_liege = {
-				NOR = {
-					has_title = title:e_byzantium
-					has_title = title:h_eastern_roman_empire
-				}
-			}
+			top_liege = { has_a_roman_empire_trigger = no }
 			NOT = { this = scope:barbarian_ruler }
 			NOT = { this = character:93 }
 			NOT = { this = character:175110 }
@@ -62,12 +63,7 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 	option = { #Christians harmonized with the Imperial church
 		name = bp_narrative_events.0001.imperial_christian_response
 		trigger = {
-			top_liege = {
-				NOR = {
-					has_title = title:e_byzantium
-					has_title = title:h_eastern_roman_empire
-				}
-			}
+			top_liege = { has_a_roman_empire_trigger = no }
 			NOT = { this = scope:barbarian_ruler }
 			NOT = { this = character:93 }
 			NOT = { this = character:175110 }
@@ -81,12 +77,7 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 	option = { #Hellenists
 		name = bp_narrative_events.0001.imperial_christian_response
 		trigger = {
-			top_liege = {
-				NOR = {
-					has_title = title:e_byzantium
-					has_title = title:h_eastern_roman_empire
-				}
-			}
+			top_liege = { has_a_roman_empire_trigger = no }
 			NOT = { this = scope:barbarian_ruler }
 			NOT = { this = character:93 }
 			NOT = { this = character:175110 }
@@ -99,6 +90,8 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 		trigger = { this = scope:barbarian_ruler }
 		add_piety = 100
 		add_prestige = 100
+		# Handle the regalia
+		trigger_event = { id = bp_narrative_events.0003 days = { 4 6 } }
 	}
 	option = { #Genseric
 		name = bp_narrative_events.0001.genseric_response
@@ -116,12 +109,7 @@ bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
 	option = { #Byzantine Option
 		name = bp_narrative_events.0001.byzantine_response
 		trigger = {
-			top_liege = {
-				OR = {
-					has_title = title:e_byzantium
-					has_title = title:h_eastern_roman_empire
-				}
-			}
+			top_liege = { has_a_roman_empire_trigger = yes }
 			NOT = { this = scope:barbarian_ruler }
 			NOT = { this = character:93 }
 			NOT = { this = character:175110 }
@@ -136,12 +124,13 @@ bp_narrative_events.0002 = { #WTWSMS id: zusk_event.26
 	title = bp_narrative_events.0002.name
 	desc = bp_narrative_events.0002.desc
 	type = character_event
-	theme = realm
+	theme = byzantine
+	override_background = throne_room
 	content_source = dlc_WtWSMS
 	
 	right_portrait = {
 		character = root
-		animation = personality_honorable
+		animation = acknowledging
 	}
 	
 	option = {
@@ -183,5 +172,166 @@ bp_narrative_events.0002 = { #WTWSMS id: zusk_event.26
 		name = bp_narrative_events.0002.b
 		fallback = yes
 		show_as_tooltip = { scope:the_last_wre_holder = { get_title = title:h_western_roman_empire } }
+	}
+}
+
+# Handling the Western Imperial Regalia after the Fall of Rome
+bp_narrative_events.0003 = { #WTWSMS id: imperial_legacy.42
+	title = bp_narrative_events.0003.name
+	desc = bp_narrative_events.0003.desc
+	type = character_event
+	
+	theme = crown
+	content_source = dlc_WtWSMS
+	
+	trigger = { ### TODO: Proper regalia artifact with variable so this is less janky
+		any_artifact = {
+			has_variable = artifact_succession_title
+			var:artifact_succession_title = title:h_western_roman_empire
+			artifact_owner = {
+				this != root
+				top_liege = root
+			}
+		}
+	}
+	
+	immediate = {
+		# Find the Regalia
+		random_artifact = {
+			limit = {
+				has_variable = artifact_succession_title
+				var:artifact_succession_title = title:h_western_roman_empire
+				artifact_owner = {
+					this != root
+					top_liege = root
+				}
+			}
+			save_scope_as = regalia_artifact
+			artifact_owner = { save_scope_as = regalia_owner }
+		}
+		
+		title:e_wre.holder = { save_scope_as = wre_holder }
+		title:h_western_roman_empire.holder = { save_scope_as = wre_holder }
+		
+		title:e_byzantium.holder = { save_scope_as = ere_holder }
+		title:h_eastern_roman_empire.holder = { save_scope_as = ere_holder }
+		
+		hidden_effect = {
+			# Add claims
+			scope:regalia_owner = { add_personal_artifact_claim = scope:regalia_artifact }
+			scope:wre_holder = { add_personal_artifact_claim = scope:regalia_artifact }
+			scope:ere_holder = { add_personal_artifact_claim = scope:regalia_artifact }
+		}
+	}
+	
+	left_portrait = {
+		character = scope:regalia_owner
+		animation = obsequious_bow
+		camera = camera_event_very_left_further_back
+	}
+	artifact = {
+		target = scope:regalia_artifact
+		position = lower_center_portrait
+	}
+	right_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	lower_left_portrait = scope:wre_holder
+	lower_right_portrait = scope:ere_holder
+	
+	# Keep it
+	option = {
+		name = bp_narrative_events.0003.a
+		add_legitimacy = medium_legitimacy_gain
+		add_prestige = major_prestige_gain
+		scope:regalia_artifact = {
+			set_owner = {
+				target = root
+				history = {
+					type = conquest
+					actor = scope:regalia_owner
+					recipient = root
+				}
+			}
+		}
+		
+		# Odoacer didn't do this
+		ai_chance = {
+			base = 100 
+			modifier = {
+				factor = 0
+				root = character:55
+			}
+		}
+	}
+	
+	# Send to ERE
+	option = {
+		name = bp_narrative_events.0003.b
+		trigger = { exists = scope:ere_holder }
+		
+		add_trait = roman_nostalgia
+		add_legitimacy = major_legitimacy_gain
+		
+		scope:regalia_artifact = {
+			add_artifact_history = {
+				type = conquest
+				actor = scope:regalia_owner
+				recipient = root
+			}
+			set_owner = {
+				target = scope:ere_holder
+				history = {
+					type = given
+					actor = root
+					recipient = scope:ere_holder
+				}
+			}
+		}
+		reverse_add_opinion = {
+			target = scope:ere_holder
+			modifier = gift_artifact_opinion
+			opinion = 100
+		}
+		
+		# This is closest to what Odoacer did historically
+		ai_chance = {
+			base = 300
+		}
+	}
+	
+	# Send to WRE
+	option = {
+		name = bp_narrative_events.0003.c
+		trigger = { exists = scope:wre_holder }
+		
+		add_trait = roman_nostalgia
+		add_legitimacy = medium_legitimacy_gain
+		
+		scope:regalia_artifact = {
+			add_artifact_history = {
+				type = conquest
+				actor = scope:regalia_owner
+				recipient = root
+			}
+			set_owner = {
+				target = scope:wre_holder
+				history = {
+					type = given
+					actor = root
+					recipient = scope:wre_holder
+				}
+			}
+		}
+		reverse_add_opinion = {
+			target = scope:wre_holder
+			modifier = gift_artifact_opinion
+			opinion = 100
+		}
+		
+		ai_chance = {
+			base = 200
+		}
 	}
 }

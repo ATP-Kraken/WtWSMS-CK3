@@ -18,6 +18,8 @@ five_year_playable_pulse = {
 	on_actions = {
 		delay = { days = { 28 288 } }
 		BP_flavor_events_character_pulse_rare
+		delay = { days = { 28 288 } }
+		BP_roman_nostalgia_character_pulse
 	}
 }
 
@@ -128,6 +130,24 @@ BP_flavor_events_character_pulse_rare = {
 		20  = hellenic.531		# Prayers for Nyx
 		20  = hellenic.532		# Erotes
 		20  = hellenic.544		# Athena visits
+    }
+}
+
+BP_roman_nostalgia_character_pulse = {
+	trigger = {
+		current_year < 1200
+		is_capable_adult = yes
+		is_landed = yes
+		NOR = {
+			has_trait = roman_nostalgia
+			has_character_flag = bp_historical_flavor_0002_declined
+			has_cultural_era_or_later = culture_era_late_medieval
+		}
+	}
+	random_events = { # 1/200 chance every 5 years
+		chance_to_happen = 10
+		100 = 0
+		100  = bp_historical_flavor.0002		# Gain Roman Nostalgia
     }
 }
 

@@ -51,7 +51,15 @@ odoacer_takeover_war = { #Cribbed from invasion wars
 	}
 	
 	on_victory = {
-		scope:attacker = { show_pow_release_message_effect = yes }
+		scope:attacker = {
+			show_pow_release_message_effect = yes
+			# Trigger narrative event before other events relating to title change
+			set_global_variable = {
+				name = fall_of_rome
+				value = scope:attacker
+			}
+			trigger_event = bp_narrative_events.0001
+		}
 		
 		# Legitimacy
 		add_legitimacy_attacker_victory_effect = yes
@@ -460,7 +468,22 @@ odoacer_takeover_war = { #Cribbed from invasion wars
 		scope:attacker = { set_realm_capital = title:c_ravenna }
 		scope:attacker = { add_legitimacy = 500 }
 		scope:attacker = { add_realm_law = non_roman_minority_rule_law_3 }
-		hidden_effect = { #Fix vassal governments
+		hidden_effect = {
+			#Vassalize Augustulus
+			create_title_and_vassal_change = {
+				type = conquest
+				save_scope_as = vassalize_defender
+			}
+			scope:defender = {
+				change_liege = {
+					liege = scope:attacker
+					change = scope:vassalize_defender
+				}
+				convert_to_subroman_government_effect = yes
+			}
+			resolve_title_and_vassal_change = scope:vassalize_defender
+			
+			#Fix vassal governments
 			scope:attacker = {
 				every_vassal_or_below = {
 					limit = { has_main_roman_government_trigger = yes }
@@ -473,11 +496,11 @@ odoacer_takeover_war = { #Cribbed from invasion wars
 			}
 		}
 		
-		#Imprison Orestes and Romulus Augustulus (done before vassal transfer so that top liege stuff resolves correctly)
+		#Imprison Orestes and Romulus Augustulus
+		scope:defender = { add_trait = deposed }
+		scope:attacker = { imprison = { target = scope:defender type = house_arrest } }
 		if = {
 			limit = { scope:defender = character:96054 }
-			character:96054 = { add_trait = deposed }
-			scope:attacker = { imprison = { target = character:96054 type = house_arrest } }
 			scope:attacker = { imprison = { target = character:96055 type = dungeon } }
 		}
 		
@@ -487,6 +510,13 @@ odoacer_takeover_war = { #Cribbed from invasion wars
 				limit = { exists = 175110 }
 				character:175110 = {
 					save_scope_as = the_last_wre_holder
+					
+					# These relationships are set in the history files
+					remove_relation_rival = scope:defender
+					set_relation_rival = {
+						target = scope:attacker
+						reason = rival_claimed_my_title
+					}
 					trigger_event = { id = bp_narrative_events.0002 }
 				}
 			}

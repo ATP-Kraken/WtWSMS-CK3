@@ -1905,7 +1905,7 @@
 }
 
 145290 = {
-	name = "Augustus"
+	name = "Caesar" #Augustus in vanilla
 	# Gaius Iulius Caesar Octavianus Divi Filius Augustus
 	dna = 145290_augustus_octavius
 	dynasty = 8648
@@ -2556,7 +2556,7 @@
 }
 
 175110 = {
-	name = "Nepos"	# PLRE vol. 2 Iulius Nepos 3
+	name = "Iulius"	# PLRE vol. 2 Iulius Nepos 3
 	# Julius Nepos
 	dna = 175110_julius_nepos
 	dynasty = 1042306
