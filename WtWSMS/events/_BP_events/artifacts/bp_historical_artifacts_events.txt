@@ -215,9 +215,11 @@ bp_historical_artifacts.0023 = {
 			}
 			title:k_visigoths.holder = { create_artifact_fp2_votive_crowns_effect = { OWNER = this } }
 			every_ruler = {
-				culture = culture:visigothic
-				is_landed = yes
-				highest_held_title_tier = tier_duchy
+				limit = {
+					culture = culture:visigothic
+					is_landed = yes
+					highest_held_title_tier = tier_duchy
+				}
 				add_to_list = potential_votive_crown_holders_list
 			}
 			while = {
