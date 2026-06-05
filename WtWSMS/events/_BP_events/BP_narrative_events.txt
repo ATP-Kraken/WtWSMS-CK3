@@ -2,6 +2,7 @@
 
 #0001 - Fall of Rome to Barbarians
 #0002 - Julius Nepos becomes WRE
+#0003 - Regalia transfer
 
 #Fall of Rome
 bp_narrative_events.0001 = { #WTWSMS id: zusk_event.30
@@ -132,6 +133,10 @@ bp_narrative_events.0002 = { #WTWSMS id: zusk_event.26
 		character = root
 		animation = acknowledging
 	}
+	artifact = {
+		target = scope:diadem_artifact
+		position = lower_center_portrait
+	}
 	
 	option = {
 		trigger = { root = scope:the_last_wre_holder }
@@ -147,16 +152,13 @@ bp_narrative_events.0002 = { #WTWSMS id: zusk_event.26
 			}
 			convert_to_roman_government_effect = yes
 		}
+		scope:diadem_artifact = { set_owner = { target = root } }
 		if = {
 			limit = { root ?= scope:the_last_wre_holder }
 			every_player = {
 				limit = {
 					NOT = { root = scope:the_last_wre_holder }
 					is_ai = no
-					OR = {
-						is_landed = yes
-						is_landless_ruler = yes
-					}
 				}
 				trigger_event = { id = bp_narrative_events.0002 }
 			}
@@ -181,16 +183,18 @@ bp_narrative_events.0003 = { #WTWSMS id: imperial_legacy.42
 	desc = bp_narrative_events.0003.desc
 	type = character_event
 	
-	theme = crown
+	theme = coronation
 	content_source = dlc_WtWSMS
 	
-	trigger = { ### TODO: Proper regalia artifact with variable so this is less janky
+	trigger = {
 		any_artifact = {
-			has_variable = artifact_succession_title
-			var:artifact_succession_title = title:h_western_roman_empire
+			has_variable = western_roman_regalia
 			artifact_owner = {
-				this != root
-				top_liege = root
+				OR = {
+					this = root
+					top_liege = root
+					is_imprisoned_by = root
+				}
 			}
 		}
 	}
@@ -199,15 +203,20 @@ bp_narrative_events.0003 = { #WTWSMS id: imperial_legacy.42
 		# Find the Regalia
 		random_artifact = {
 			limit = {
-				has_variable = artifact_succession_title
-				var:artifact_succession_title = title:h_western_roman_empire
+				has_variable = western_roman_regalia
 				artifact_owner = {
-					this != root
-					top_liege = root
+					OR = {
+						this = root
+						top_liege = root
+						is_imprisoned_by = root
+					}
 				}
 			}
 			save_scope_as = regalia_artifact
-			artifact_owner = { save_scope_as = regalia_owner }
+			if = {
+				limit = { artifact_owner != root }
+				artifact_owner = { save_scope_as = regalia_owner }
+			}
 		}
 		
 		title:e_wre.holder = { save_scope_as = wre_holder }
@@ -295,7 +304,7 @@ bp_narrative_events.0003 = { #WTWSMS id: imperial_legacy.42
 			opinion = 100
 		}
 		
-		# This is closest to what Odoacer did historically
+		# This is what Odoacer did historically
 		ai_chance = {
 			base = 300
 		}
@@ -332,6 +341,10 @@ bp_narrative_events.0003 = { #WTWSMS id: imperial_legacy.42
 		
 		ai_chance = {
 			base = 200
+			modifier = {
+				factor = 0
+				root = character:55
+			}
 		}
 	}
 }

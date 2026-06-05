@@ -16,7 +16,7 @@
  bp_narrative_events.0002.b: "It will not last..."
  #Handling the Western Regalia
  bp_narrative_events.0003.name: "The Emperor's Regalia"
- bp_narrative_events.0003.desc: "With the conquest of [GetTitleByKey('c_roma').GetBaseNameNoTier] and [GetTitleByKey('c_ravenna').GetBaseNameNoTier], what previously was the [regalia_artifact.GetName] is now in my hands.\nThe question is now what I should do with the symbols of state.\n\nKeeping them would show continuity, while sending them to another Emperor could grant my [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] more official recognition."
+ bp_narrative_events.0003.desc: "With the conquest of [GetTitleByKey('c_roma').GetBaseNameNoTier] and [GetTitleByKey('c_ravenna').GetBaseNameNoTier], what previously was the [regalia_artifact.GetName] is now in my hands.\nThe question is now what I should do with the symbols of state.\n\nKeeping them would show continuity, while sending them to the Emperor in the East could grant my [ROOT.Char.GetPrimaryTitle.GetTierAsNameNoTooltip] more official recognition."
  bp_narrative_events.0003.a: "It looks nice... I think I'll keep it."
  bp_narrative_events.0003.b: "Send it to the Eastern Emperor, that we may be recognized."
  bp_narrative_events.0003.c: "Return it to what is left of the Western Roman Empire."

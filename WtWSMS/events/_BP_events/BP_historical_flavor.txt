@@ -142,7 +142,7 @@ bp_historical_flavor.0002 = { #WTWSMS id: zusk_event.5/imperial_legacy.46
 		OR = {
 			culture = { has_cultural_parameter = greco_roman_social_tradition }
 			AND = {
-				highest_held_title_tier >= tier_king
+				highest_held_title_tier >= tier_kingdom
 				OR = {
 					has_realm_law = non_roman_minority_rule_law_3
 					has_realm_law = non_roman_minority_rule_law_4

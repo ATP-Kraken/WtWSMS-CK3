@@ -383,13 +383,26 @@ disestablish_east_senate = {
 	cost = {}
 	
 	effect = {
-		disestablished_senate_effect = {
-			REGION = east
-			MAIN_EMPIRE = h_eastern_roman_empire
-			OPPOSITE_EMPIRE = h_western_roman_empire
+		if = {
+			limit = { is_ai = no }
+			show_as_tooltip = {
+				disestablished_senate_effect = {
+					REGION = east
+					MAIN_EMPIRE = h_eastern_roman_empire
+					OPPOSITE_EMPIRE = h_western_roman_empire
+				}
+			}
+			trigger_event = { id = BP_roman_senate_events.1001 }
 		}
-		root = { save_scope_as = the_destroyer }
-		every_player = { trigger_event = { id = BP_roman_senate_events.1002 } }
+		else = {
+			disestablished_senate_effect = {
+				REGION = east
+				MAIN_EMPIRE = h_eastern_roman_empire
+				OPPOSITE_EMPIRE = h_western_roman_empire
+			}
+			root = { save_scope_as = the_destroyer }
+			every_player = { trigger_event = { id = BP_roman_senate_events.1002 } }
+		}
 	}
 	
 	ai_potential = { always = yes }
