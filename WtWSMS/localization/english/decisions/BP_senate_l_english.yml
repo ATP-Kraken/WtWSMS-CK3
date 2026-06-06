@@ -1,6 +1,6 @@
 ﻿l_english:
  #Demand land for your dynasty
- a_family_member_recieves_an_available_barony: "If accepted by [senate_seate_holder.GetName]:\n$TAB$A random [unlanded|E] Senator of your [dynasty|E] who is not your descendent recieves a barony in [senate_seate_holder.GetPrimaryTitle.GetName] that is not a [county_capital|E]"
+ a_family_member_recieves_an_available_barony: "If accepted by [senate_seate_holder.GetName]:\n$TAB$A random [unlanded|E] Senator of your [dynasty|E] who is not your descendant recieves a barony in [senate_seate_holder.GetPrimaryTitle.GetName] that is not a [county_capital|E]"
  
  demand_land_for_family_west: "Demand Estates"
  demand_land_for_family_west_desc: "My family is prestigous enough that we are owed more land than is currently under our jurisdiction. We should demand more!"
