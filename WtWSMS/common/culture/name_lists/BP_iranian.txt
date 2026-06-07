@@ -250,6 +250,11 @@ name_list_parthian = {
 	
 	patronym_suffix_male = "dynnpat_suf_zade"
 	patronym_suffix_female = "dynnpat_suf_dokht"
+	
+	mercenary_names = {
+		{ name = "mercenary_company_band_of_medes" }
+		{ name = "mercenary_company_immortals_of_place" }
+	}
 }
 name_list_crytian = { #A clone of kurds
 	cadet_dynasty_names = {
