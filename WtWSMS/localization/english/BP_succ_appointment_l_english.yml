@@ -3,7 +3,7 @@
  same_heritage_tt: "Same [heritage|E]"
  same_heritage_continua_tt: "Same [kulturbund|E]"
  same_heritage_group_tt: "Same [heritage_group|E]"
- roman_culture_tt: "Romance [culture|E]"
+ roman_culture_tt: "[bp_greco_roman_social_traditions|E]"
  alien_culture_tt: "Alien Culture"
  child_of_holder_desc: "Child of the current holder"
  strong_implicit_title_claim_desc: "Has a strong implicit claim"
