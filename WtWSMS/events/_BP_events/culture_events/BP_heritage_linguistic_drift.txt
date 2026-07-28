@@ -819,7 +819,12 @@ scripted_effect propagate_language_effect = {
 				set_name_list = name_list_pannonian_romance
 			}
 			else_if = {
-				limit = { has_cultural_pillar = language_germano_african_romance }
+				limit = {
+					OR = {
+						has_cultural_pillar = language_african_romance
+						has_cultural_pillar = language_germano_african_romance
+					}
+				}
 				set_name_list = name_list_african_romance
 			}
 			else_if = {
