@@ -1,10 +1,11 @@
 ﻿l_english:
  language_baltic_name: "East Baltic"
  language_basque_name: "Euskara"
- language_central_germanic_name: "Irminonic Germanic"
+ language_central_germanic_name: "Irminonic"
  language_cushitic_name: "Lowlands Cushitic"
  language_egyptian_name: "Kemetic"
  language_ethiopic_name: "Abyssinian"
+ language_frankish_name: "Istvaeonic"
  language_french_name: "D'Oïl Romance"
  language_iberian_name: "Romaz" #From Old Castillan
  language_iranian_name: "Persian"
