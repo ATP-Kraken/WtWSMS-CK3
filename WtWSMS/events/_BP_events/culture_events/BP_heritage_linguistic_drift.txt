@@ -1098,6 +1098,7 @@ scripted_effect shift_latin_heritage_to_children_effect = {
 	}
 }
 
+# Saxony is Central, but Anglo-Saxons are West
 scripted_trigger is_central_germanic_saxon_trigger = {
 	has_cultural_pillar = heritage_saxon
 	is_culture_mostly_in_linguistic_region_trigger = { REGION = custom_ashkenaz }
@@ -1106,6 +1107,17 @@ scripted_trigger is_central_germanic_saxon_trigger = {
 scripted_trigger is_west_germanic_saxon_trigger = {
 	has_cultural_pillar = heritage_saxon
 	NOT = { is_culture_mostly_in_linguistic_region_trigger = { REGION = custom_ashkenaz } }
+}
+
+# Jutes in Cimbria become North, Anglos in Britain become West
+scripted_trigger is_north_germanic_jutlandic_trigger = {
+	has_cultural_pillar = heritage_jutlandic
+	is_culture_mostly_in_linguistic_region_trigger = { REGION = world_europe_north }
+}
+
+scripted_trigger is_west_germanic_jutlandic_trigger = {
+	has_cultural_pillar = heritage_jutlandic
+	NOT = { is_culture_mostly_in_linguistic_region_trigger = { REGION = world_europe_north } }
 }
 
 scripted_trigger is_carpodaci_trigger = {
@@ -1120,13 +1132,13 @@ scripted_effect germanic_shift_by_local_cultures_effect = {
 				percent > 0.5
 				any_neighboring_county = {
 					OR = {
-						culture = { has_cultural_pillar = heritage_nordwestblock }
-						culture = { has_cultural_pillar = heritage_west_germanic }
+						culture = { has_cultural_pillar = heritage_scandzan }
+						culture = { has_cultural_pillar = heritage_north_germanic }
 					}
 				}
 			}
 		}
-		set_culture_pillar = heritage_west_germanic
+		set_culture_pillar = heritage_north_germanic
 		ccu_culture_created_or_changed_effect = yes
 	}
 	else_if = {
@@ -1135,13 +1147,13 @@ scripted_effect germanic_shift_by_local_cultures_effect = {
 				percent > 0.5
 				any_neighboring_county = {
 					OR = {
-						culture = { has_cultural_pillar = heritage_scandzan }
-						culture = { has_cultural_pillar = heritage_north_germanic }
+						culture = { has_cultural_pillar = heritage_nordwestblock }
+						culture = { has_cultural_pillar = heritage_west_germanic }
 					}
 				}
 			}
 		}
-		set_culture_pillar = heritage_north_germanic
+		set_culture_pillar = heritage_west_germanic
 		ccu_culture_created_or_changed_effect = yes
 	}
 	else_if = {
@@ -1188,14 +1200,19 @@ scripted_effect shift_germanic_heritage_to_children_effect = {
 			limit = {
 				OR = {
 					has_cultural_pillar = heritage_nordwestblock
-					has_cultural_pillar = heritage_jutlandic
+					is_west_germanic_jutlandic_trigger = yes
 					is_west_germanic_saxon_trigger = yes
 				}
 			}
 			germanic_shift_by_local_cultures_effect = { DEFAULT_MEDIEVAL_HERITAGE = heritage_west_germanic }
 		}
 		else_if = {
-			limit = { has_cultural_pillar = heritage_scandzan }
+			limit = {
+				OR = {
+					has_cultural_pillar = heritage_scandzan
+					is_north_germanic_jutlandic_trigger = yes
+				}
+			}
 			germanic_shift_by_local_cultures_effect = { DEFAULT_MEDIEVAL_HERITAGE = heritage_north_germanic }
 		}
 		else_if = {
