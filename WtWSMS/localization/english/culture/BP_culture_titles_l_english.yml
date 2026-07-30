@@ -531,9 +531,9 @@
  king_male_daco_thracian: "Rézas"
  king_female_daco_thracian: "$king_female_romano_dacian$"
  kingdom_daco_thracian: "$kingdom_romano_dacian$"
- emperor_male_romano_dacian: "$emperor_male_romano_dacian$"
- emperor_female_romano_dacian: "$emperor_female_romano_dacian$"
- empire_romano_dacian: "$empire_romano_dacian$"
+ emperor_male_daco_thracian: "$emperor_male_romano_dacian$"
+ emperor_female_daco_thracian: "$emperor_female_romano_dacian$"
+ empire_daco_thracian: "$empire_romano_dacian$"
  #Republics
  barony_republic_daco_thracian: "Bria"
  #Albanian

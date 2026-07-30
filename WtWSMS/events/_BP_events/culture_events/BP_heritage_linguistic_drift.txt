@@ -1412,7 +1412,7 @@ bp_heritage_linguistic_drift.0104 = {
 	#Become Vlach
 	option = {
 		name = bp_heritage_linguistic_drift.0104.vlach
-		flavor = bp_heritage_linguistic_drift.0104.vlach.flavor
+		flavor = bp_heritage_linguistic_drift.0104.vlach.tt
 		trigger = { root.culture = { is_carpodaci_trigger = yes } }
 		root.culture = {
 			set_culture_pillar = heritage_vlach
@@ -1422,7 +1422,7 @@ bp_heritage_linguistic_drift.0104 = {
 	#Become Carpathian
 	option = {
 		name = bp_heritage_linguistic_drift.0104.carpathian
-		flavor = bp_heritage_linguistic_drift.0104.carpathian.flavor
+		flavor = bp_heritage_linguistic_drift.0104.carpathian.tt
 		trigger = { root.culture = { is_carpodaci_trigger = yes } }
 		root.culture = {
 			set_culture_pillar = heritage_albanian

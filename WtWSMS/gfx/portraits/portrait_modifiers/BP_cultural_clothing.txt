@@ -535,8 +535,8 @@
 			accessory = {
 				mode = add
 				gene = headgear
-				template = ccp9_uyghur_high_nobility_headgear
-				range = { 0 1 } # For the randomness to work correctly
+				template = ccp9_high_nobility_headgear
+				accessory = m_headgear_ccp9_uyg_hi_01
 			}
 		}
 		weight = {

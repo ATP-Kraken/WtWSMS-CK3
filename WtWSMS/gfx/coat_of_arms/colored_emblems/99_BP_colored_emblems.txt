@@ -1,4 +1,4 @@
-# https://commons.wikimedia.org/wiki/File:Vexilloid_of_the_Roman_Empire.svg CC-Attribution 3.0 License
+﻿# https://commons.wikimedia.org/wiki/File:Vexilloid_of_the_Roman_Empire.svg CC-Attribution 3.0 License
 ce_aquila.dds = { colors = 1 category = animals }
 
 # https://commons.wikimedia.org/wiki/File:Armenian_Apostolic_Church_logo.png, Public Domain
