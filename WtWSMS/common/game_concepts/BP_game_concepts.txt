@@ -109,6 +109,7 @@ bp_urbanization_innovations = {
 	texture = "gfx/interface/icons/message_feed/technology.dds"
 	shown_in_encyclopedia = no
 }
+
 #Certain pairwise tradition blocks
 bp_body_status_tradition = {
 	parent = culture_tradition
