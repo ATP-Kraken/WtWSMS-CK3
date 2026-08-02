@@ -58,6 +58,10 @@
  LEGAL_BUREAU_DIRECTOR_INCREASE_CONTROL_LOCAL_COUNTY_MODIFIERS: "$MARSHAL_INCREASE_CONTROL_LOCAL_COUNTY_MODIFIERS$"
  LEGAL_BUREAU_DIRECTOR_INCREASE_CONTROL_MIME_MODIFIER: "$MARSHAL_INCREASE_CONTROL_MIME_MODIFIER$"
  
+ #Treasury
+ task_great_projects_roman: "$task_great_projects$"
+ task_great_projects_roman_effect_desc: "$task_great_projects_effect_desc$"
+ 
  ##### TOOLTIPS #####
  #VALUES
  task_integrate_title_roman_VALUE_NAME: "[de_jure_drift|E]"

@@ -3,6 +3,7 @@ task_great_projects_roman = {
 	position = councillor_count_imperial_treasury
 	#Duplicate to prevent redundant defaults
 	#clone = task_great_projects
+	is_shown = { has_tgp_dlc_trigger = yes } # Great projects must be accessible
 
 	task_type = task_type_general
 	task_progress = task_progress_infinite
