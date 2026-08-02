@@ -1059,7 +1059,6 @@ set_autocephalous_church_flags = {
 	effect = {
 		faith:armenian_apostolic = { set_variable = { name = church_culture value = culture:armenian } }
 		faith:georgian_orthodox = { set_variable = { name = church_culture value = culture:georgian } }
-		faith:cypriot_church = { set_variable = { name = church_culture value = culture:cypriot } }
 	}
 }
 set_ethnic_religion_flags = {
