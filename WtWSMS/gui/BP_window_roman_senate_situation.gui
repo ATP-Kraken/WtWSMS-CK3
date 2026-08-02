@@ -1274,7 +1274,8 @@ types BPSenateSituationTypes
 			using = Background_Area_Administrative_Decoration
 			
 			hbox = {
-				width = 580
+				max_width = 580
+				layoutpolicy_horizontal = expanding
 				margin = { 5 -5 }
 				coa_dynasty_big = {
 				}
