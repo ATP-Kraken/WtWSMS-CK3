@@ -750,7 +750,7 @@
  count_roman_government_male: "Comes"
  count_roman_government_female: "Comitissa"
  county_roman_government: "Comitātus"
- duke_roman_government_male: "Praetor"
+ duke_roman_government_male: "Praeses"
  duke_roman_government_female: "Praetrix"
  duchy_roman_government: "Provincia"
  # roman_government: Greek
