@@ -42,7 +42,8 @@ bp_game_start = {
 		fix_fictional_tribal_dynasty_names
 		#Things that have to be done last
 		setup_roman_governments_based_on_dlc
-		setup_other_governments_based_on_dlc
+		setup_steppe_based_on_dlc
+		setup_merit_governments_based_on_dlc
 	}
 }
 
@@ -1720,10 +1721,25 @@ setup_roman_governments_based_on_dlc = {
 	}
 }
 
-setup_other_governments_based_on_dlc = {
+setup_merit_governments_based_on_dlc = {
 	trigger = { has_dlc_feature = all_under_heaven }
 	effect = {
 		#Setup missing NF titles
+		every_ruler = {
+			limit = {
+				this = this.house.house_head
+				this.primary_title.tier >= tier_county
+				any_held_title = { count < 1 is_noble_family_title = yes }
+				government_has_flag = government_is_celestial
+			}
+			give_noble_family_title = {
+				name = noble_family_name
+				tier = county
+				article = DEFAULT_TITLE_NAME_ARTICLE
+				government = celestial_government
+				save_scope_as = new_title
+			}
+		}
 		every_ruler = {
 			limit = {
 				this = this.house.house_head
@@ -1739,5 +1755,35 @@ setup_other_governments_based_on_dlc = {
 				save_scope_as = new_title
 			}
 		}
+		every_ruler = {
+			limit = {
+				this = this.house.house_head
+				this.primary_title.tier >= tier_county
+				any_held_title = { count < 1 is_noble_family_title = yes }
+				government_has_flag = government_is_steppe_admin
+			}
+			give_noble_family_title = {
+				name = noble_family_name
+				tier = county
+				article = DEFAULT_TITLE_NAME_ARTICLE
+				government = steppe_admin_government
+				save_scope_as = new_title
+			}
+		}
+	}
+}
+
+
+setup_steppe_based_on_dlc = {
+	trigger = { has_mpo_dlc_trigger = yes }
+	effect = {
+		#Add Hepthalite region to steppe
+		expanding_steppe_add_region_effect = {
+			SUB_REGION = central
+			REGION = steppe_expansion_hepthal
+		}
+		tgp_silk_road_expand_steppe_effect = { SUB_REGION = transcaspia }
+		tgp_silk_road_expand_steppe_effect = { SUB_REGION = central_asia }
+		tgp_silk_road_expand_steppe_effect = { SUB_REGION = occident }
 	}
 }

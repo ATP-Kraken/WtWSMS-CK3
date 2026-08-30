@@ -95,7 +95,7 @@
 
 36025 = {
 	name = "Yudhishthira" # Last Hepthalite
-	dynasty = 1042201
+	dynasty = 1042345
 	religion = "hepthalitism"
 	culture = "hunas"
 	father = 190092

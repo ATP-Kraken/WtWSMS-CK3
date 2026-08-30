@@ -34,6 +34,16 @@ migration_region_barbaria = {
 }
 migration_region_steppe = {
 	regions = {
-		world_steppe
+		world_steppe steppe_expansion_hepthal
+	}
+}
+steppe_expansion_hepthal = {
+	duchies = {
+		#k_sogdiana
+		d_soghd d_osrushana d_ferghana
+		#k_bactria
+		d_khuttal d_balkh
+		#k_khwarezm
+		d_khorezm d_uzboy
 	}
 }

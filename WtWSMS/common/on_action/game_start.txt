@@ -1465,19 +1465,25 @@ on_game_start = {
 					change_government = prefeudal_government ##### Changed from Vanilla
 				}
 				### Every Celestial/Meritocratic/Japanese Government becomes feudal if DLC not enabled, pre-lobby history setup ###
+				else_if = { ##### Changed from Vanilla: Separate case for steppe admin
+					limit = {
+						has_government = steppe_admin_government
+					}
+					empty_treasury_when_abandoning_landed_life_effect = yes
+					change_government = prefeudal_government
+				}
 				else_if = {
 					limit = {
 						OR = {
 							has_government = celestial_government
 							has_government = meritocratic_government
-							has_government = steppe_admin_government
+							#has_government = steppe_admin_government
 							has_government = japan_administrative_government
 							has_government = japan_feudal_government
 						}
 					}
 					empty_treasury_when_abandoning_landed_life_effect = yes
 					change_government = feudal_government
-
 				}
 				if = {
 					limit = {
